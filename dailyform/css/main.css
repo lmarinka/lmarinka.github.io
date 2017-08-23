@@ -10,6 +10,7 @@ h1, p {
 body {
 	margin: 0;
 	padding: 0;
+	height: 100vh;
 	/*background: #000;*/
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff512f+1,dd2476+100 */
 background: #ff512f; /* Old browsers */
