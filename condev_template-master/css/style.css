@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.maincontent {
+  flex: 1 0;
+}
+
+.footer {
+  background: #eff1f9;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.copyright {
+  color: #162240;
+  font-size: 0.815rem;
+}
+a {
+  display: block;
+}
+
+/**
+* header
+*/
+
+.header {
+  background: #eff1f9;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+
+}
+.page-nav {
+  margin-left: auto;
+}
+
+.nav__link  {
+  opacity: 1;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px 10px 10px ;
+}
+
+.nav__link:active  {
+  background: #9d7f61;
+  opacity: 1;
+  color: #ffd21d;
+  transition: color .1s ease-in-out;
+}
+
+.mobile-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+input {
+  display: none;
+}
+
+
+.nav__list {
+  position: absolute;
+  display: none;
+  background: #afa38c;
+}
+
+
+.nav__link:first-child {
+  padding-top:  10px;
+}
+
+
+.mobile-btn {
+  width: 25px;
+  height: 25px;
+  background: url('../img/menu.svg');
+}
+
+input:checked ~ .nav__list {
+  right: 2px;
+  display: block;
+}
+
+input:checked ~ .mobile-btn {
+  background-image: url('../img/clear.svg');
+}
+
+
+/**
+* special
+**/
+
+.special__item {
+  border-top: 1px solid rgba(22,34,64, .1);
+  border-left: 1px solid rgba(22,34,64, .1);
+  border-right: 1px solid rgba(22,34,64, .1);
+  width: 100%;
+  background: #f7f8fc;
+  padding: 45px 10px;
+  text-align: center;
+  transition: background .2s ease-in-out;
+}
+
+.special__item:last-child {
+  border-bottom: 1px solid rgba(22,34,64, .1);
+}
+
+.special__img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.special__img > img {
+  margin: auto;
+}
+
+
+.special__title {
+  margin-top: 15px;
+  color: #666;
+  font-size: 1.625rem;
+  letter-spacing: 0.2px;
+  transition: color .2s ease-in-out;
+}
+
+.special__desc {
+  margin-top: 7px;
+  color: rgba(102,102,102, .75);
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  transition: color .2s ease-in-out;
+}
