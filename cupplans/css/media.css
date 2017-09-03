@@ -1,0 +1,42 @@
+@media screen and (max-width: 1068px) {
+	.wrapper {
+		background: #fdde7e;
+		height: 100%;
+	}
+
+	.wrapper__list {
+		flex-wrap: wrap;
+	}
+
+	.wrapper__item {
+		margin-bottom: 30px;
+		width: 45%;	
+	}
+	.wrapper__list:first-child {
+		margin-top: 30px;
+	}
+
+
+	.second {
+		order: 3;
+	}
+
+	.third {
+		order: 2;
+	}
+}
+
+@media screen and (max-width: 730px) {
+
+	.wrapper__item {
+		width: 90%;	
+	}
+
+	.second {
+		order: 2;
+	}
+
+	.third {
+		order: 3;
+	}
+}
