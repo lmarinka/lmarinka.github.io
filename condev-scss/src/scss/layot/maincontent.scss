@@ -1,0 +1,274 @@
+/**
+* special
+**/
+
+.page--header {
+  display: none;
+}
+.about {
+  display: flex;
+  flex-flow: row wrap;
+}
+.line {
+  width: 37px;
+  height: 5px;
+  background: #ffd21d;
+}
+
+.about__title {
+  font-size: 1.9375rem;
+  font-weight: 700;
+  color: #333333;
+  letter-spacing: 1.5px;
+}
+
+.desc {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around; 
+  align-items: center;
+}
+.about__title, .about__desc, .about__buttom {
+  display: block;
+}
+.about__desc {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2.1875rem;
+  color: #9a9a9a;
+}
+
+.about__buttom {
+  width: 215px;
+  height: 60px;
+  background: #ffd21d;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  color: #162240;
+  letter-spacing: 1px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.figur {
+  width: 100%;
+  height: 600px;
+}
+.figur__picture {
+  width: 100%;
+  height: 100%;
+}
+
+.special__item {
+  border-top: 1px solid rgba(22,34,64, .1);
+  border-left: 1px solid rgba(22,34,64, .1);
+  border-right: 1px solid rgba(22,34,64, .1);
+  width: 100%;
+  background: #f7f8fc;
+  padding: 45px 10px;
+  text-align: center;
+  transition: background .2s ease-in-out;
+}
+
+.special__item:last-child {
+  border-bottom: 1px solid rgba(22,34,64, .1);
+}
+
+.special__img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.special__img > img {
+  margin: auto;
+}
+
+
+.special__title {
+  margin-top: 15px;
+  color: #666;
+  font-size: 1.625rem;
+  letter-spacing: 0.2px;
+  transition: color .2s ease-in-out;
+}
+
+.special__desc {
+  margin-top: 7px;
+  color: rgba(102,102,102, .75);
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  transition: color .2s ease-in-out;
+}
+
+.partners__list {
+  padding: 50px 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.discount {
+  padding: 10px 10px;
+  background: #ffd21d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.discount__text {
+  color: #162240;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.discount__button {
+  width: 180px;
+  height: 40px;
+  background: #162240;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 768px){
+  .special__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .special__item {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .special__item:nth-child(2n) {
+    border-left: none;
+  }
+  .special__item:last-child {
+    border-bottom: none;
+  }
+  .special__item:hover {
+    background: #eff1f9;
+  }
+  .special__item:hover .special__title {
+    color: #162240;
+  }
+  .special__item:hover .special__desc {
+    color: rgba(102,102,102, 1);
+  }
+
+  .special__desc-wrap {
+    margin-top: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page--header {
+    display: flex;
+    flex-flow: rew nowrap;
+    /*justify-content: space-between;*/
+    background: #162240;
+    padding: 0 215px;
+    align-items: center;
+  }
+
+  .page--header-logo {
+    width: 40%;
+  }
+
+  .page--header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .page--header__list {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+.nav__item {
+  padding: 0;
+}
+
+.page--header-nav__link {
+  margin: 20px 0;
+}
+
+.page--header-nav__link:hover {
+  box-sizing: border-box;
+  border-top: 2px solid #c7a52a;
+}
+
+
+.special__item {
+  padding: 65px 25px;
+}
+
+.special__title {
+  margin-top: 40px;
+}
+
+.special__desc {
+ margin-top: 20px;
+}
+
+.desc {
+width: 50%;
+margin: 100px 0;
+}
+
+.figur {
+  width: 50%;
+}
+
+.figur--order-first {
+  order: 1;
+}
+.figur--order-second {
+  order: 2;
+}
+
+.discount {
+  padding: 70px 215px;
+  justify-content: space-between;
+}
+.discount__text {
+  font-size: 2.8rem;
+}
+
+.discount__button {
+  width: 210px;
+  height: 60px;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+  .special__list {
+    flex-flow: row nowrap;
+  }
+
+  .special__item {
+    border-left: none;
+    border-top: none;
+  }
+  .special__item:last-child {
+    border-right: none;
+  }
+}
+
+@media screen and (min-width: 1600px){
+  .special__item {
+    padding: 95px 25px;
+  }
+}

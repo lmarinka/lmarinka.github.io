@@ -1,0 +1,161 @@
+// $header-background: #c2c2c2
+// $container-width: 1770px
+
+// .header
+// 	width: 100%
+// 	height: 50px
+// 	box-shadow: 0 2px 5px rgba(0, 0, 0, .3)
+// 	background: $header-background
+
+
+// .block 
+// 	width: 100px
+// 	height: 100px
+// 	background: #000
+// 	@include center_x
+// 	top: 300px
+// 	@include rem(16)
+
+
+.header {
+  background: #eff1f9;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+
+}
+.page-nav {
+  margin-left: auto;
+}
+
+.nav__link  {
+  opacity: 1;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px 10px 10px ;
+  text-align: center;
+}
+
+.nav__link:active  {
+  background: #eff1f9;
+  opacity: 1;
+  color: #ffd21d;
+  transition: color .1s ease-in-out;
+}
+
+.mobile-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+input {
+  display: none;
+}
+
+
+.nav__list {
+  position: absolute;
+  display: none;
+  background: #162240;  
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+
+.nav__link:first-child {
+  padding-top:  20px;
+}
+
+
+.mobile-btn {
+  width: 25px;
+  height: 25px;
+  background: url('../img/menu.svg');
+}
+
+input:checked ~ .nav__list {
+  right: 2px;
+  display: block;
+  height: 100vh;
+  width: 200px;
+}
+
+input:checked ~ .mobile-btn {
+  background-image: url('../img/clear.svg');
+}
+
+@media screen and (min-width: 768px){
+
+.header {
+  flex-wrap: wrap;
+}
+.mobile-btn {
+  display: none;
+}
+.logo, .logo__link {
+  width: 100%;
+  justify-content: center;
+}
+
+.logo {
+  margin: 40px 0;
+}
+
+// .logo--mobile-picture {
+//   width: 200px;
+//   height: 30px;
+// }
+
+.page-nav  {
+  width: 100%;
+  margin-left: 0;
+}
+
+.nav__list {
+  display: flex;
+  background: none;
+  position: relative;
+  flex-wrap: nowrap;
+  justify-content: center;
+ 
+}
+
+.nav__item:first-child {
+  padding-left: 10px;
+}
+
+.nav__item, .nav__link {
+  justify-content: center;
+}
+
+
+.nav__link {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+}
+
+.nav__item {
+   padding: 0 20px;
+}
+
+.nav__item:first-child {
+  padding-left: 0;
+}
+
+.nav__item:last-child {
+  padding-right: 0;
+}
+
+.nav__link:hover  {
+  opacity: 1;
+  color: #ffd21d;
+  transition: color .1s ease-in-out;
+}
+}
