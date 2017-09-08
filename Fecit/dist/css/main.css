@@ -140,7 +140,9 @@ a {
     display: block;
     height: 100vh;
     width: 200px;
-    margin-top: 40px; }
+    margin-top: 40px; 
+    position: absolute;
+    z-index: 999;}
   input:checked ~ .mobile-btn {
     /*right: 200px;*/
     background-image: url("../img/clear.svg"); } }
