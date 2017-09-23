@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Basic page needs
+	============================================ -->
+
+	<meta charset="UTF-8">
+	<title>Photo</title>
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta ext install vimStylext install vimStyle
+	e
+	name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile specific metas
+	============================================ -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Libs CSS
+	============================================ -->
+
+	<link rel="stylesheet" href="style/libs.css">
+
+
+	<!-- Favicon
+	============================================ -->
+	<!-- <link rel="shortcut icon" type="images/x-icon" href="images/fav_icon.ico"> -->
+
+	<!-- Theme CSS
+	============================================ -->
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="style/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+	
+	<!-- Media Queries CSS
+	============================================ -->
+
+	<link rel="stylesheet" href="style/responsive.css">
+
+	<!-- Old IE
+	============================================ -->
+
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+		<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+			<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+		</a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+
+</head>
+<body>
+
+
+	<!-- - - - -  header - - - - -->
+
+	<section class="photo-header">
+		<div class="header-bg">
+			<header class="header">
+	<div class="overlay">
+        <!-- <div class="container"> -->
+            <div class="flex-container">
+                <div class="logo">
+                    <a class="logo__link" href="index.html">
+                        <img src="img/logotype-white-desktop.png" alt="" class="logo__img">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                <!--     <input type="checkbox" name="menu" id="menu" class="responsive-btn">
+                    <label for="menu" class="responsive-btn">
+                        <img src="img/ic_menu_24px.svg" alt="MENU BTN">
+                    </label> -->
+
+               <input type="checkbox" id="menu" class="responsive-btn">
+               <label for="menu" class="mobile-btn">
+               </label>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item current"><a href="index.html" class="main-nav__link current">Главная</a></li>
+                        <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+                        <li class="main-nav__item"><a href="table.html" class="main-nav__link">Конкурс</a></li>
+                        <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <!-- </div> -->
+    </div>
+			</header> <!-- /.header -->
+			<div class="photo-header__title">
+				<p class="photo-header__text">Фотографии пользователей</p>
+			</div>
+		</div>
+		
+
+	</section> <!-- ./photo-header -->
+
+
+	<!-- maincontent
+	============================================ -->
+
+	<div class="maincontent">
+		
+		<section class="panorama">
+			<div class="section__title">
+				<p>Взгляните на фотографии, которые выкладывают пользователи!</p>
+				<p>Видите, как не хватает ваших?</p>
+			</div>
+			
+			<figure class="panorama-figure">
+				<img src="img/panorama_img.jpg" alt="panorama" class="panorama-figure__img">
+				<div class="panoramaday">панорама дня</div>
+			</figure>
+			<figcaption class="panorama-figcaption">
+				<div class="container panorama-figcaption__container">
+
+				<!-- panorama-figcaption__title -->
+				<div class="panorama-figcaption__title">
+					<div class="panorama-figcaption__left">
+						<span class="panorama-figure__name">анна</span>
+						<span class="panorama-figure__time">(5 минут назад)</span>
+
+					</div>
+					<div class="panorama-figure__right">
+						<p class="panorama-figure__like">Нравится: 215</p>
+						<!-- <div class="panorama-figure__heard"><i class="material-icons panorama-figure__icon">favorite_border</i><input type="checkbox" id="button_3" class="input-heard input-heard__hea">
+              							<label for="button_3" class="heard">
+               						</label>
+						</div> -->
+
+						<input type="checkbox" id="button_3" class="input-heard input-heard__header">
+              							<label for="button_3" class="heard">
+               						</label>
+
+					</div>
+					
+				</div>  <!-- ./panorama-figcaption__title -->
+
+				<p class="panorama-figure__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+
+						<div class="panorama-figure__right-mobile">
+										
+						<input type="checkbox" id="button_mob" class="input-heard input-heard__mob">
+              							<label for="button_mob" class="heard">
+               						</label>
+              			<p class="panorama-figure__like">Нравится: 215</p>
+
+					</div>
+
+				</div> <!-- ./container -->
+			</figcaption>  <!-- ./panorama-figcaption -->
+
+		</section>  <!-- ./panorama -->
+
+
+		<section class="section album">
+			
+			<div class="container">
+				<ul class="album__list">
+
+					<!-- album__item -->
+					<li class="album__item">
+						<figure class="album__figure">
+							<a href="#" class="album__link">
+								<img src="img/album_1.jpg" alt="" class="album__img">							
+							</a>
+						</figure>
+						<figcaption class="album__figcaption">
+							<div class="album__figcaption__container">
+
+								<!-- panorama-figcaption__title -->
+								<div class="album__figcaption__title">
+									<div class="album__figcaption__left">
+										<span class="album__figcaption__name">Левон</span>
+										<span class="album__figcaption__time">(5 часов назад)</span>
+
+									</div>
+														
+								</div>  <!-- ./panorama-figcaption__title -->
+
+								<p class="album__figcaption__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+								<div class="album__figcaption__right">
+									<p class="album__figcaption__like">Нравится: 356</p>
+									<!-- <div class="album__figcaption__heard"><i class="material-icons" class="album__figcaption__icon">favorite_border</i> -->
+										<input type="checkbox" id="button_1" class="input-heard one">
+              							 	<label for="button_1" class="heard">
+               								</label>
+								</div>
+
+								</div>
+
+						</figcaption>
+					</li>  <!-- ./album__item -->
+
+
+					<!-- album__item -->
+					<li class="album__item">
+						<figure class="album__figure">
+							<a href="#" class="album__link">
+								<img src="img/album_2.jpg" alt="" class="album__img">							
+							</a>
+						</figure>
+						<figcaption class="album__figcaption">
+							<div class="album__figcaption__container">
+
+								<!-- panorama-figcaption__title -->
+								<div class="album__figcaption__title">
+									<div class="album__figcaption__left">
+										<span class="album__figcaption__name">Антон</span>
+										<span class="album__figcaption__time">(12 часов назад)</span>
+
+									</div>
+														
+								</div>  <!-- ./panorama-figcaption__title -->
+
+								<p class="album__figcaption__comment">Соседи будут рады!</p>
+								<div class="album__figcaption__right">
+									<p class="album__figcaption__like">Нравится: 666</p>
+									<!-- <div class="album__figcaption__heard"><i class="material-icons" class="album__figcaption__icon">favorite_border</i> -->
+
+										<input type="checkbox" id="button_2" class="input-heard first"> 
+              							 	<label for="button_2" class="heard">
+               								</label>
+									
+								</div>
+
+							</div>
+
+						</figcaption>
+					</li>  <!-- ./album__item -->
+
+
+
+										<!-- album__item -->
+					<li class="album__item">
+						<figure class="album__figure">
+							<a href="#" class="album__link">
+								<img src="img/album_3.jpg" alt="" class="album__img">							
+							</a>
+						</figure>
+						<figcaption class="album__figcaption">
+							<div class="album__figcaption__container">
+
+								<!-- panorama-figcaption__title -->
+								<div class="album__figcaption__title">
+									<div class="album__figcaption__left">
+										<span class="album__figcaption__name">Борис</span>
+										<span class="album__figcaption__time">(20 часов назад)</span>
+
+									</div>
+														
+								</div>  <!-- ./panorama-figcaption__title -->
+
+								<p class="album__figcaption__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+								<div class="album__figcaption__right">
+									<p class="album__figcaption__like">Нравится: 215</p>
+									
+										<input type="checkbox" id="button_4" class="input-heard second"> 
+              							 	<label for="button_4" class="heard">
+               								</label>
+									</div>
+
+								</div>
+
+						</figcaption>
+					</li>  <!-- ./album__item -->
+
+
+
+										<!-- album__item -->
+					<li class="album__item">
+						<figure class="album__figure">
+							<a href="" class="album__link">
+								<img src="img/album_4.jpg" alt="" class="album__img">							
+							</a>
+						</figure>
+						<figcaption class="album__figcaption">
+							<div class="album__figcaption__container">
+
+								<!-- panorama-figcaption__title -->
+								<div class="album__figcaption__title">
+									<div class="album__figcaption__left">
+										<span class="album__figcaption__name">Сергей</span>
+										<span class="album__figcaption__time">(25 часов назад)</span>
+
+									</div>
+														
+								</div>  <!-- ./panorama-figcaption__title -->
+
+								<p class="album__figcaption__comment">Самая кубанская в мире!</p>
+								<div class="album__figcaption__right">
+									<p class="album__figcaption__like">Нравится: 4</p>
+								<!-- 	<div class="album__figcaption__heard"><i class="material-icons" class="album__figcaption__icon">favorite_border</i> -->
+									
+									<input type="checkbox" id="button_5" class="input-heard third"> 
+              							 	<label for="button_5" class="heard">
+               								</label>
+
+								</div>
+
+							</div>
+
+						</figcaption>
+					</li>  <!-- ./album__item -->
+
+
+										<!-- album__item -->
+					<li class="album__item">
+						<figure class="album__figure">
+							<a href="" class="album__link">
+								<img src="img/album_5.jpg" alt="" class="album__img">							
+							</a>
+						</figure>
+						<figcaption class="album__figcaption">
+							<div class="album__figcaption__container">
+
+								<!-- panorama-figcaption__title -->
+								<div class="album__figcaption__title">
+									<div class="album__figcaption__left">
+										<span class="album__figcaption__name">Максим</span>
+										<span class="album__figcaption__time">(40 часов назад)</span>
+
+									</div>
+														
+								</div>  <!-- ./panorama-figcaption__title -->
+
+								<p class="album__figcaption__comment">Где снег-то?</p>
+								<div class="album__figcaption__right">
+									<p class="album__figcaption__like">Нравится: 150</p>
+									<!-- <div class="album__figcaption__heard"><i class="material-icons" class="album__figcaption__icon">favorite_border</i> -->
+
+										<input type="checkbox" id="button_6" class="input-heard fifth"> 
+              							 	<label for="button_6" class="heard">
+               								</label>
+									
+
+									</div>
+
+								</div>
+
+						</figcaption>
+					</li>  <!-- ./album__item -->
+
+
+
+										<!-- album__item -->
+					<li class="album__item">
+						<figure class="album__figure">
+							<a href="" class="album__link">
+								<img src="img/album_6.jpg" alt="" class="album__img">							
+							</a>
+						</figure>
+						<figcaption class="album__figcaption">
+							<div class="album__figcaption__container">
+
+								<!-- panorama-figcaption__title -->
+								<div class="album__figcaption__title">
+									<div class="album__figcaption__left">
+										<span class="album__figcaption__name">Надежда</span>
+										<span class="album__figcaption__time">(45 часов назад)</span>
+
+									</div>
+														
+								</div>  <!-- ./panorama-figcaption__title -->
+
+								<p class="album__figcaption__comment">Всем GM и взаимные лайки!</p>
+								<div class="album__figcaption__right">
+									<p class="album__figcaption__like">Нравится: 2560</p>
+									<!-- <div class="album__figcaption__heard"><i class="material-icons" class="album__figcaption__icon">favorite_border</i> -->
+
+											<input type="checkbox" id="button_7" class="input-heard six"> 
+              							 	<label for="button_7" class="heard">
+               								</label>
+									
+									</div>
+
+								</div>
+
+						</figcaption>
+					</li>  <!-- ./album__item -->
+
+
+				</ul>
+			</div> <!-- ./container -->
+ 
+		</section>  <!-- ./section album -->
+
+
+
+		<section class="section photo-redactor">
+			
+			<div class="section__title">
+				<p>Затмите их всех! </p>
+				<p>Выкладывайте все, что накопилось в телефоне!</p>
+			</div>
+
+
+			<!-- photo-redactor__container -->
+			<div class="container photo-redactor__container">
+				
+				<div class="photo-redactor__left">
+
+					<img src="img/photo_change.jpg" class="photo-redactor__img" alt="">
+					
+				</div>  <!-- ./photo-redactor__right -->
+
+				<div class="photo-redactor__right">
+
+					<ul class="photo-redactor__list">
+						<li class="photo-redactor__item">
+							<img src="img/cut.png" alt="">
+							<input id="photo-redactor__image" type="range" min="0" max="290" step="1" value="70" />
+						</li>
+						<li class="photo-redactor__item">
+							<img src="img/fill.png" alt="">
+							<input id="photo-redactor__image" type="range" min="0" max="290" step="1" value="250"/>
+						</li>
+						<li class="photo-redactor__item">
+							<img src="img/contrast.png" alt="" class="photo-redactor__img-contrast">
+							<input id="photo-redactor__image" type="range" min="0" max="290" step="1" value="200"/>
+						</li>
+					</ul>
+				<!-- 	<div class="photo-redactor__instrument">
+						<img src="img/cut.png" alt="">
+
+						<input id="photo-redactor__image" type="range" min="0" max="290" step="1" value="70" />
+					</div>  
+
+					<div class="photo-redactor__instrument">
+						<img src="img/fill.png" alt="">
+
+						<input id="photo-redactor__image" type="range" min="0" max="290" step="1" value="250"/>
+					</div>  
+
+					<div class="photo-redactor__instrument">
+						<img src="img/contrast.png" alt="" class="photo-redactor__img-contrast">
+
+						<input id="photo-redactor__image" type="range" min="0" max="290" step="1" value="200"/>
+					</div>  --> 
+
+					<div class="photo-redactor__instrument">
+						<input id="photo-redactor__image-mobile" type="range" min="0" max="290" step="1" value="70" />
+					</div>
+					
+					<div class="photo-redactor__form">
+						<form>
+							<button class="photo-redactor__btn photo-redactor__btn-active">Запостить</button>
+							<button class="photo-redactor__btn photo-redactor__btn-hover">Отмена</button>
+						</form>
+					</div>
+					
+				</div>  <!-- ./photo-redactor__right -->
+
+			</div> <!-- ./photo-redactor__container -->
+
+		</section>  <!-- ./photo-redactor -->
+
+
+	</div> <!-- /.maincontent -->
+
+	<!-- footer
+	============================================ -->
+
+	<!-- <footer class="footer"> -->
+	<footer class="page-footer page-footer--main-page">
+    <div class="container">
+        <div class="flex-container footer-flex">
+            <div class="logo-footer">
+                <a class="logo-footer__link" href="index.html">
+                    <img src="img/logotype-blue-desktop.png" alt="logo" class="logo-footer__img">
+                </a>
+            </div>
+            <div class="social-links">
+                <a class="social-link social-link--twitter" href="#"><i class="fa fa-twitter social__icon" aria-hidden="true"></i></a>
+                <a class="social-link social-link--facebook" href="#"><i class="fa fa-facebook social__icon" aria-hidden="true"></i></a>
+                <a class="social-link social-link--youtube" href="#"><i class="material-icons social__icon">play_arrow</i></a>
+            </div>
+            <div class="copyright">
+                <p class="copyright__text">Разработано <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/">
+                    <img src="img/htmlacademy.png" alt="" class="copyright__img">
+                </a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+	<!-- </footer> /.footer -->
+
+
+
+
+
+
+
+
+
+
+<!-- jquery & libs
+============================================ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="libs/jquery/jquery-3.2.0.min.js"><\/script>')</script>
+
+<!-- script plugin
+============================================ -->
+<script src="js/script.plugin.js"></script>
+
+
+<!-- script custom
+============================================ -->
+<script src="js/script.custom.js"></script>
+</body>
+</html>
