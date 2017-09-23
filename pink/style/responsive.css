@@ -63,6 +63,7 @@ medium
   text-align: center;
   color: #fff;
   vertical-align: middle;
+  transition: display 0.3s ease-in-out;
 
 }
 
@@ -70,6 +71,10 @@ medium
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   background: #283645;
 
+}
+
+.main-nav__item:before:active {
+  background: #fff; 
 }
 
 .main-nav__item {
@@ -218,6 +223,11 @@ medium
   width: 100%;
 }
 
+.photo-redactor__btn:active {
+  border: 2px solid #d22a58;
+  color: #d22a58;
+}
+
 .photo-redactor__btn-active {
   margin-bottom: 10px;
 }
@@ -274,6 +284,10 @@ medium
 }
 .one {
   order: 1;
+}
+
+.social-link:active {
+  border-color: #283645;
 }
 
 .page-footer--main-page {
